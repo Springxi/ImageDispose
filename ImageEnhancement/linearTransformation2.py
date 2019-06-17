@@ -17,20 +17,15 @@ def grayHist(img):
     cv.imshow("img", img)
 
 
-img = cv.imread("../testImage/img1.jpg", 0)
-img = cv.resize(img, None, fx=0.95, fy=0.95)   #沿x，y轴缩放倍数
+img = cv.imread("../testImage/img3.jpg", 0)
+img = cv.resize(img, None, fx=1.0, fy=1.0)   #沿x，y轴缩放倍数
 h, w = img.shape[:2]
 out = np.zeros(img.shape, np.uint8)
-###################################################这里的参数需要调！！！！！！！！！！！！！！
 for i in range(h):
     for j in range(w):
         pix = img[i][j]
-        if pix < 50:
-            out[i][j] = 0.5 * pix
-        elif pix < 150:
-            out[i][j] = 3.6 * pix - 310
-        else:
-            out[i][j] = 0.238 * pix + 104
+        out[i][j] = pix * 1.8
+out[out < 0] = 0
 out[out > 255] = 255    #进行数据截断，大于255的值截断为255
 out = np.around(out)    #强制类型转换，numpy.around(arr, decimals=0, out=None)
 out = out.astype(np.uint8) #编码格式,无符号8位int

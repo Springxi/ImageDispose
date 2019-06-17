@@ -17,7 +17,7 @@ def grayHist(img):
 
 
 
-img = cv.imread("../testImage/img1.jpg", 0)
+img = cv.imread("../testImage/img3.jpg", 0)
 Imin, Imax = cv.minMaxLoc(img)[:2]
 #minVal，maxVal，minLoc，maxLoc = cv.minMaxLoc（src [，mask]）
 #返回值分别为：最小值，最大值，最小值的位置索引，最大值的位置索引。

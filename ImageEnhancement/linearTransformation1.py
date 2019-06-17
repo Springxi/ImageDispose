@@ -17,7 +17,7 @@ def grayHist(img):
     cv.imshow("img", img)
 
 
-img = cv.imread("../testImage/img1.jpg", 0)
+img = cv.imread("../testImage/img.jpg", 0)
 out = 1.3 * img
 out[out > 255] = 255    #进行数据截断，大于255的值截断为255
 out = np.around(out)
