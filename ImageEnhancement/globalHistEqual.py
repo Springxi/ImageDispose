@@ -64,7 +64,7 @@ def euqalHist(img):
 
 
 
-img = cv.imread("../testImage/img3.jpg", 0)
+img = cv.imread("../testImage/img2.jpg", 0)
 #使用自己写的函数实现
 out = euqalHist(img)
 

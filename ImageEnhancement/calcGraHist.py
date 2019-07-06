@@ -12,7 +12,7 @@ def calcGraHist(I):
             grayHist[I[i][j]] += 1
     return grayHist
 
-img = cv.imread("../testImage/img1.jpg", 0)    #图像的读取
+img = cv.imread("../testImage/img2.jpg", 0)    #图像的读取
 grayHist = calcGraHist(img)
 x = np.arange(256)   #np.arange()函数返回一个有终点和起点的固定步长的排列
 

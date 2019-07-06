@@ -3,9 +3,8 @@ import numpy as np
 from skimage import data
 import matplotlib.pyplot as plt
 import cv2
-
-image = data.camera()
-
+#image = data.camera()
+image = cv2.imread("../testImage/img3.jpg", 0)
 
 def LaplaceOperator(roi, operator_type):
     if operator_type == "fourfields":

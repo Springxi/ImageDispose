@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv.imread("../testImage/img1.jpg", 0)
+img = cv.imread("../testImage/img3.jpg", 0)
 h, w = img.shape[:2]
 pixelSequence = img.reshape([h * w, ])
 numberBin = 256
