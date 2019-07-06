@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Jun 26 14:14:00 2017
 
-@author: ubuntu-507
-"""
 
 from __future__ import absolute_import
 from __future__ import division
